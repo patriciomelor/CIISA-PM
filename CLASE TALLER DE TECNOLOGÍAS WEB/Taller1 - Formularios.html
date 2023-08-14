@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Espacio de estilo a los formulariis*/
+        /*Fondos de color*/
+        
+        .form {
+            background-color: darkgoldenrod;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+        
+        h4 {
+            margin-left: 15px;
+        }
+        
+        .form h4 #SexMujer #SexHombre {
+            margin-left: 10px;
+        }
+        
+        .form input {
+            margin-left: 10px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+        
+        form input {
+            margin: auto 15px auto 15px;
+        }
+        
+        .rellenar {
+            background-color: grey;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h4>Nombre completo:</h4>
+        <input type="text" name="nombre" value="Patricio Melo" disabled id="nombre">
+        <h4>RUT</h4>
+        <input type="number" name="rut" value="18063531" disabled id="">
+        <select name="DV" id="" disabled>
+            <option default value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option selected="true" value="9">9</option>
+            <option value="k">k</option>
+        </select>
+
+        <h4>Sexo:</h4>
+        <input type="checkbox" name="SexHombre" value="Hombre" checked disabled id="SexHombre"> <span>Hombre</span>
+        <input type="checkbox" name="SexMujer" value="Mujer" disabled id="SexMujer"> <span>Mujer</span>
+    </div>
+
+    <div class="rellenar">
+        <form action="" method="post">
+            <h1>Complete los datos del formulario</h1><br>
+
+            <h4>Inserte dirección:</h4>
+            <input type="text" required name="calle" id="">
+            <h4>Insertar Numero</h4>
+            <input type="number" required>
+            <h4>Insertar Comuna</h4>
+            <input type="text" required>
+            <h4>Insertar Fono</h4>
+            <input type="number" maxlength="9" required>
+            <h4>Insertar edad</h4>
+            <input type="number" maxlength="2" required>
+            <hr>
+            <button type="submit" class="enviar">Enviar Formulario</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Boostrap PMR</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        .container .row {
+            margin-top: 30px!important;
+        
+        }
+        #margin {
+            color: brown;
+            font-size: 20px;
+            background-color: aqua;
+            border-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body class="bg-body">
+    <!--Nav-->
+    <div class="container w-100">
+        <header class="d-flex justify-content-center bg-dark w-100 py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link " aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="PaginaInscripcion.html" class="nav-link active">Sobre nosotros</a></li>
+                <li class="nav-item"><a href="SolicitarLibro.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </header>
+    </div>
+    <!--Cuerpo-->
+    <div class="container align-content-center text-xl-center">
+        <div class="row ">
+            <div class="col-md-12">
+                <h4 class="mb-3">Inscripcion de usuarios</h4>
+                <form method="post" action="">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="Nombre" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="Nombre" placeholder="Patricio Alejandro" value="" required="true">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="Apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="Apellidos" placeholder="Melo Riquelme" value="" required="true">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="username" class="form-label">Correo</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="email" class="form-control" id="username" placeholder="you@gmail.com" required="">
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="password" class="form-label">Contraseña <span class="text-body-secondary">(Obligatorio)</span></label>
+                            <input type="password" class="form-control" id="password" required>
+
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="address" placeholder="Alameda 1234" required="">
+
+                        </div>
+
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button onclick="NombreBoton();" id="boton" class="w-100 btn btn-warning btn-lg" type="submit">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2023 PMR Company, Para Instituto CIISA</span>
+            </div>
+        </footer>
+    </div>
+    <!--JSBST-->
+    <script src="./assets/JS/archivo.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
