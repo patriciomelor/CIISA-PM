@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Asset/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Simulador de Inversión Bancaria</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Simulador de Inversión Bancaria</h1>
+          <form id="investmentForm">
+        <label for="investmentType">Tipo de inversión:</label>
+        <select id="investmentType" name="investmentType">
+            <option value="plazoFijo">Ahorro a Plazo Fijo</option>
+            <option value="plazoRenovable">Ahorro a Plazo Renovable</option>
+        </select>
+        
+        <div id="currencyOptions">
+            <label for="currency">Moneda:</label>
+            <select id="currency" name="currency">
+                <option value="pesos">PESOS</option>
+                <option value="uf">UF</option>
+            </select>
+        </div>
+        
+        <label for="amount">Monto de inversión:</label>
+        <input type="number" id="amount" name="amount" min="10000" step="1">
+        
+        <label for="duration">Duración (días):</label>
+        <input type="number" id="duration" name="duration" min="7" step="1">
+        
+        <button type="button" id="calculateButton">Calcular</button>
+    </form>
+    </div>
+
+    <script src="Asset/js/script.js"></script>
+</body>
+</html>
