@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coningenio - Consultora WEB PMR</title>
+    <link rel="stylesheet" href="src/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg justify-content-center bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="src/img/con-ingenio-solo-blanco.png" width="10%" alt>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll" aria-controls="navbarScroll"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobrenosotros">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#nuestrosservicios" tabindex="-1"
+                aria-disabled="true">Nuestros Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1"
+                aria-disabled="true">Whatsapp Pronto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button id="modoOscuroBtn" class="btn btn-dark">Modo Oscuro</button>
+            <button id="modoClaroBtn" class="btn btn-light"
+              style="display: none">
+              Modo Claro
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slider" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+          class="active"></button>
+        <button type="button" data-bs-target="#demo"
+          data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo"
+          data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="src/img/img1.jpg" class="d-block banner" />
+          <img src="src/img/logo-grande-letras-blanco.png"
+            class="carousel-logo" />
+        </div>
+        <div class="carousel-item">
+          <img src="src/img/img2.jpg" class="d-block banner" />
+          <img src="src/img/logo-grande-letras-blanco.png"
+            class="carousel-logo" />
+        </div>
+        <div class="carousel-item">
+          <img src="src/img/img3.jpg" class="d-block banner" />
+          <img src="src/img/logo-grande-letras-blanco.png"
+            class="carousel-logo" />
+        </div>
+      </div>
+    </div>
+    <main class="bg-light">
+      <!-- //Aboutme o sobre Nosotros -->
+      <section>
+        <div class="container" id="sobrenosotros">
+          <h1 class="display-3 mg-10">Sobre Nosotros</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Mision</h5>
+                  <p class="card-text">
+                    Nuestra misión es ofrecer soluciones digitales innovadoras y
+                    de
+                    alta calidad que impulsen el éxito de nuestros clientes,
+                    ayudándolos a alcanzar sus objetivos empresariales a través
+                    de
+                    la tecnología y la creatividad
+                  </p>
+                  <br />
+                  <br />
+                  <button class="btn btn-primary leer-mas" data-popup="popup1">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Vision</h5>
+                  <p class="card-text">
+                    Nos visualizamos como lideres en el campo de la consultoría
+                    y
+                    desarrollo de software, reconocidos por nuestra excelencia
+                    en el
+                    servicio al cliente, nuestra capacidad para adaptarnos a las
+                    necesidades cambiantes del mercado y nuestra contribución al
+                    crecimiento y la transformación digital de las empresas.
+                  </p>
+                  <br />
+                  <button class="btn btn-primary leer-mas" data-popup="popup2">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="d-flex">
+
+        <img src="src/img/bck.avif" class="img-bi" s alt>
+
+      </div>
+      <section>
+        <!--Nuestros Servicios-->
+        <div class="container" id="nuestrosservicios">
+          <h1 class="display-3 mg-10">Nuestros Servicios</h1>
+          <div class="row mg-10">
+            <div class="col-md-6 ">
+              <div class="card">
+                <h5 class="card-header bg-danger text-white">Nuestros
+                  Servicios</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Consultor Digital</h5>
+                  <p class="card-text">
+                    Identificamos las fallas y conectamos los puntos entre tu
+                    negocio y tu estrategia digital. Nuestro equipo experto
+                    cuenta
+                    con años de experiencia en la definición de estrategias y
+                    hojas
+                    de ruta en función de tus objetivos específicos.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <h5 class="card-header bg-warning text-white">Nuestros
+                  Servicios</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Soluciones multiexperiencia</h5>
+                  <p class="card-text">
+                    Deleitamos a las personas usuarias con experiencias
+                    interconectadas a través de aplicaciones web, móviles,
+                    interfaces conversacionales, digital twin, IoT y AR. Su
+                    arquitectura puede adaptarse y evolucionar para adaptarse a
+                    los
+                    cambios de tu organización.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mg-10">
+            <div class="col-md-6">
+              <div class="card">
+                <h5 class="card-header bg-primary text-white">Nuestros
+                  Servicios</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Evolución de ecosistemas</h5>
+                  <p class="card-text">
+                    Ayudamos a las empresas a evolucionar y ejecutar sus
+                    aplicaciones de forma eficiente, desplegando equipos
+                    especializados en la modernización y el mantenimiento de
+                    ecosistemas técnicos. Creamos soluciones robustas en
+                    tecnologías
+                    de vanguardia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <h5 class="card-header bg-success text-white">Nuestros
+                  Servicios</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Soluciones Low-Code</h5>
+                  <p class="card-text">
+                    Traemos el poder de las soluciones low-code y no-code para
+                    ayudar a nuestros clientes a acelerar su salida al mercado y
+                    añadir valor. Aumentamos la productividad y la calidad,
+                    reduciendo los requisitos de cualificación de los
+                    desarrolladores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="d-flex">
+
+        <img src="src/img/bck.avif" class="img-bi-rot" s alt>
+
+      </div>
+      <!--Contacto-->
+      <section>
+        <div class="container">
+          <div class="row mg-t-80" id="contacto">
+            <h1 class="display-3 align-content-center mx-auto">Contactanos</h1>
+            <div class="col-xl-6">
+              <div class="form-layout form-layout-4">
+                <h6
+                  class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Contactanos!</h6>
+                <form class="form-control p-4" method="post" id="ContactForm"
+                  autocomplete="on">
+                  <div class="row">
+                    <label class="col-sm-4 form-control-label">Nombre: <span
+                        class="tx-danger">*</span></label>
+                    <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                      <input type="text" required class="form-control"
+                        id="nombre" placeholder="Pedrito">
+                    </div>
+                  </div><!-- row -->
+                  <div class="row mg-t-20">
+                    <label class="col-sm-4 form-control-label">Apellido: <span
+                        class="tx-danger">*</span></label>
+                    <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                      <input type="text" required class="form-control"
+                        id="apellido" placeholder="Perez">
+                    </div>
+                  </div>
+                  <div class="row mg-t-20">
+                    <label class="col-sm-4 form-control-label">Email: <span
+                        class="tx-danger">*</span></label>
+                    <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                      <input type="email" class="form-control" id="email"
+                        placeholder="xxxx@gmail.com">
+                    </div>
+                  </div>
+                  <div class="row mg-t-20">
+                    <label class="col-sm-4 form-control-label">Servicio: <span
+                        class="tx-danger">*</span></label>
+                    <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                      <select class="form-control select2" id="servicio"
+                        required data-placeholder="Selecciona servicio">
+                        <option value="Consultor Digital">Consultor
+                          Digital</option>
+                        <option value="Soluciones multiexperiencia">Soluciones
+                          multiexperiencia</option>
+                        <option value="Evolución de ecosistemas">Evolución de
+                          ecosistemas</option>
+                        <option value="Soluciones Low-Code">Soluciones
+                          Low-Code</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mg-t-20">
+                    <label class="col-sm-4 form-control-label">Mensaje: <span
+                        class="tx-danger">*</span></label>
+                    <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                      <textarea rows="3" class="form-control" required id="mensaje"
+                        placeholder></textarea>
+                    </div>
+                  </div>
+                  <div class="form-layout-footer mg-t-30">
+                    <button class="btn btn-success">Enviar</button>
+                    <button class="btn btn-secondary"
+                      type="reset">Borrar</button>
+                  </div><!-- form-layout-footer -->
+                </form>
+              </div><!-- form-layout -->
+            </div>
+            <div class="col-xl-6">
+              <h6
+                class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Visitanos!</h6>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.7788022525606!2d-70.62355162467338!3d-33.42901079641386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf62a2cb75c3%3A0xeefbd125aba56501!2sAv.%20Providencia%201234%2C%20Oficina%20601%2C%207500571%20Providencia%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1713385638718!5m2!1ses-419!2scl"
+                width="600" height="450" style="border:0;" allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <footer class="bg-grey">
+          <div class="container">
+            <footer
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+              <div class="col mb-3">
+                <a href="/"
+                  class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                  <img src="src/img/logo-grande.png" width="100%" alt>
+                </a>
+
+              </div>
+
+              <div class="col mb-3">
+
+              </div>
+
+              <div class="col mb-3">
+                <h5>Direccion</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">Av.Providencia 1234, <br>Oficina 601
+                    Providencia,<br> Santiago,Chile</li>
+                </ul>
+              </div>
+
+              <div class="col mb-3">
+                <h5>Contacto telefónico</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="tel:+56212345678"
+                      class="nav-link p-0 text-muted">+56 2 1234 5678</a></li>
+                </ul>
+              </div>
+
+              <div class="col mb-3">
+                <h5>Correo electrónico:</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="mailto:info@coningenio.cl"
+                      class="nav-link p-0 text-muted">info@coningenio.cl</a></li>
+                </ul>
+              </div>
+            </footer>
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>© 2024 <a href="http://www.coningenio.cl/">coningenio</a>,Todos
+                Los derechos reservados</p>
+
+            </div>
+          </div>
+        </footer>
+      </section>
+      <div id="popup1" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <h2>Misión</h2>
+          <p>
+            Nuestra misión es ofrecer soluciones digitales innovadoras y de alta
+            calidad que impulsen el éxito de nuestros clientes, ayudándolos a
+            alcanzar sus objetivos empresariales a través de la tecnología y la
+            creatividad. Nos esforzamos por entender las necesidades específicas
+            de cada cliente y desarrollar soluciones personalizadas que no solo
+            resuelvan problemas, sino que también agreguen valor a sus
+            operaciones
+            y fortalezcan su posición en el mercado. Con un enfoque centrado en
+            la
+            excelencia y la colaboración, buscamos establecer relaciones sólidas
+            y
+            duraderas con nuestros clientes, trabajando juntos para aprovechar
+            al
+            máximo las oportunidades que ofrece el entorno digital en constante
+            evolución. Desde la conceptualización hasta la implementación y más
+            allá, estamos comprometidos a ser un socio confiable y proactivo en
+            el
+            viaje hacia el éxito empresarial de nuestros clientes.
+          </p>
+        </div>
+      </div>
+      <div id="popup2" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <h2>Vision</h2>
+          <p>
+            Nos visualizamos como líderes en el campo de la consultoría y
+            desarrollo de software, reconocidos por nuestra excelencia en el
+            servicio al cliente, nuestra capacidad para adaptarnos a las
+            necesidades cambiantes del mercado y nuestra contribución al
+            crecimiento y la transformación digital de las empresas. Nos
+            esforzamos por ser pioneros en la innovación tecnológica,
+            anticipando
+            las tendencias del mercado y ofreciendo soluciones que no solo
+            satisfagan las necesidades presentes de nuestros clientes, sino que
+            también los preparen para los desafíos futuros. Creemos en la
+            importancia de la colaboración y el aprendizaje continuo, trabajando
+            en estrecha asociación con nuestros clientes para entender sus
+            desafíos únicos y ofrecer soluciones a medida que generen un impacto
+            tangible en su éxito empresarial. Como líderes en nuestro campo, nos
+            comprometemos a mantener los más altos estándares de calidad y ética
+            profesional, siendo un socio de confianza y un catalizador para el
+            progreso en la era digital.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="src/main.js" type="application/javascript"></script>
+  </body>
+</html>
